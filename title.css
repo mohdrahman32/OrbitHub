@@ -1,0 +1,113 @@
+/* Color Palette */
+:root {
+    --primary-dark: #263854;
+    --secondary-dark: #0c121c;
+    --accent: #939fb9;
+    --white: #dedce2;
+    --overlay: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for better contrast */
+  }
+  
+  /* General Styles */
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-dark);
+    color: var(--white);
+    overflow: hidden;
+  }
+  
+  .title-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay); /* Ensures video clarity with fade */
+    z-index: 2;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 3; /* Ensures text appears above overlay */
+    text-align: center;
+    color: var(--white);
+  }
+  
+  .title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--white);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow for visibility */
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--accent);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); /* Shadow for visibility */
+    opacity: 0;
+    animation: fadeIn 2.5s ease-in-out forwards;
+  }
+  
+  .launch-btn {
+    background-color: var(--primary-dark);
+    border: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+  
+  .launch-btn i {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .launch-btn:hover {
+    background-color: var(--accent);
+    transform: scale(1.1);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

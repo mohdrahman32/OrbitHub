@@ -1,0 +1,199 @@
+/* General Body and Background Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #162042; /* Dark Blue */
+    color: #fff; /* White text */
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0; /* Initially hidden for fade-in */
+    transition: opacity 2s ease-in-out;
+}
+
+.orbit-hub {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.orbit-hub:hover {
+    color: #b65326;
+}
+
+.hero.fade-in {
+    opacity: 1; /* Visible after animation */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Content Section */
+.content {
+    padding: 60px 20px;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.description h2 {
+    font-size: 3rem;
+    color: #9c472c; /* Red */
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: #0d0212; /* Dark Red */
+    border-radius: 10px;
+}
+
+.section h3 {
+    font-size: 2.5rem;
+    color: #78a6bb; /* Light Blue */
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.section h4 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #78a6bb;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.video-container {
+    width: 467px; /* Smaller size */
+    height: 350px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 60%; /* Smaller size */
+    height: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px #fff;
+    
+}
+.video-container .meteo{
+    width: 215px;
+    height: 300px;
+    border-radius: 10px;
+}
+video:hover{
+    transform: scale(1.05);
+    
+}
+
+/* Differences Table */
+.differences table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    
+    border: 1px white;
+    /* box-shadow: 2px 2px 10px #fff; */
+}
+
+.differences th {
+    background-color: #9c472c; /* Distinct Dark Blue for header row */
+    color: #fff;
+    text-align: left;
+    padding: 15px;
+    border: 1px white;
+    border-radius: 20px;
+}   
+
+.differences td {
+    background-color: #170512; /* Dark Blue for general rows */
+    color: #fff;
+    padding: 15px;
+    border: 1px white;
+    border-radius: 20px;
+}
+
+/* .differences tr:nth-child(even) td {
+    background-color: #170512; /* Alternating color for even rows */
+} */
+
+/* Footer Styling */
+footer {
+    background-color: #170512; /* Very Dark Red */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .section h3 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1.1rem;
+    }
+
+    video {
+        width: 80%; /* Adjust video size for smaller screens */
+    }
+}
