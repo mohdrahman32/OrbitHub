@@ -1,0 +1,228 @@
+/* styles-solar-system.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #e69d32;
+    background-color: #182435;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(14, 26, 40, 0.7);
+    z-index: -1;
+}
+
+.orbit-hub {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    color: #e69d32;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.orbit-hub:hover {
+    color: #ffffff;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #e69d32;
+    cursor: pointer;
+}
+
+.hero-content {
+    color: #e69d32;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Slide-out Menu */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #0b121e;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: #e69d32;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.menu ul li a:hover {
+    color: #ffffff;
+}
+
+/* Description Section */
+.description {
+    padding: 2rem;
+    background-color: #20202a;
+    color: #e69d32;
+    line-height: 1.8;
+}
+
+/.description h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.description h3 {
+    color: #e69d32;
+    margin-top: 1rem;
+}
+
+.description ul,
+.description ol {
+    margin-left: 1rem;
+}
+
+hr {
+    border: 0.5px solid #e69d32;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0e1a28;
+    color: #e69d32;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Bright Mode Button */
+.bright-mode-btn {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #e69d32;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.bright-mode-btn:hover {
+    color: #ffffff;
+}
+
+/* Dark Mode Styles (Default) */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #e69d32;
+    background-color: #182435;
+    overflow-x: hidden;
+}
+
+/* Bright Mode Styles */
+body.bright-mode {
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+body.bright-mode .hero-content h1 {
+    color: #333;
+}
+
+body.bright-mode .hero-content p {
+    color: #666;
+}
+
+body.bright-mode .menu {
+    background-color: #f0f0f0;
+}
+
+body.bright-mode .menu ul li a {
+    color: #333;
+}
+
+body.bright-mode .menu ul li a:hover {
+    color: #000;
+}
+
+body.bright-mode .orbit-hub {
+    color: #333;
+}
+
+body.bright-mode .orbit-hub:hover {
+    color: #000;
+}
+
+body.bright-mode .overlay {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+body.bright-mode .description {
+    background-color: #ffffff;
+    color: #333;
+}
+
+body.bright-mode footer {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* For Hr in Bright Mode */
+body.bright-mode hr {
+    border: 0.5px solid #333;
+}

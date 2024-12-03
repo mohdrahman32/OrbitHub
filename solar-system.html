@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Solar System: A Cosmic Neighborhood</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="solar-system.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="videos/solar-system.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <a href="home.html" class="orbit-hub">OrbitHub</a>
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-square-caret-down"></i></div>
+        <div class="hero-content">
+            <h1>The Solar System: A Cosmic Neighborhood</h1>
+            <p>"Exploring the wonders of our celestial backyard."</p>
+        </div>
+
+        <!-- Bright Mode Button -->
+    <button class="bright-mode-btn" onclick="toggleBrightMode()"><i class="fa-solid fa-sun"></i></button>
+
+        <!-- Slide-out Menu -->
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="sun.html"><i class="fa-solid fa-circle-arrow-right"></i> Sun</a></li>
+                <li><a href="moon.html"><i class="fa-solid fa-circle-arrow-right"></i> Moons</a></li>
+                <li><a href="planets.html"><i class="fa-solid fa-circle-arrow-right"></i> Planets</a></li>
+                <li><a href="dwarf.html"><i class="fa-solid fa-circle-arrow-right"></i> Dwarf Planets</a></li>
+                <li><a href="asteroids.html"><i class="fa-solid fa-circle-arrow-right"></i> Asteroids, Comets, and Meteoroids</a></li>
+                <li><a href="kuiper-belt.html"><i class="fa-solid fa-circle-arrow-right"></i> The Kuiper Belt</a></li>
+                <li><a href="oort-cloud.html"><i class="fa-solid fa-circle-arrow-right"></i> The Oort Cloud</a></li>
+                <li><a href="wind-heliosphere.html"><i class="fa-solid fa-circle-arrow-right"></i> The Solar Wind & Heliosphere</a></li>
+                <li><a href="rings.html"><i class="fa-solid fa-circle-arrow-right"></i> Rings</a></li>
+                <li><a href="dust-gas.html"><i class="fa-solid fa-circle-arrow-right"></i> Interplanetary Dust and Gas</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Description Section -->
+    <section class="description">
+        <h2>The Solar System: A Cosmic Neighborhood</h2>
+        <p>The solar system is our local cosmic community, consisting of the Sun and the celestial bodies bound by its gravity. This fascinating system provides a microcosm of the universe's diversity and complexity.</p>
+        <hr>
+        <h3>Components of the Solar System</h3>
+        <p>The solar system includes a variety of objects:</p>
+        <ul>
+            <li><strong>The Sun:</strong> A massive star at the center, supplying energy and gravitational stability.</li>
+            <li><strong>Planets:</strong> Eight major planets, divided into terrestrial and gas/ice giants.</li>
+            <li><strong>Dwarf Planets:</strong> Smaller planetary bodies like Pluto, Eris, and Ceres.</li>
+            <li><strong>Moons:</strong> Natural satellites orbiting planets.</li>
+            <li><strong>Asteroids and Meteoroids:</strong> Rocky remnants, mostly found in the asteroid belt.</li>
+            <li><strong>Comets:</strong> Icy bodies that develop tails when approaching the Sun.</li>
+            <li><strong>Kuiper Belt and Oort Cloud:</strong> Regions with icy objects beyond Neptune.</li>
+        </ul>
+        <hr>
+        <h3>Formation of the Solar System</h3>
+        <p>The solar system formed approximately 4.6 billion years ago:</p>
+        <ol>
+            <li><strong>Nebular Collapse:</strong> Gravity caused the cloud to collapse, forming a spinning disk.</li>
+            <li><strong>Protostar Formation:</strong> The central region became the Sun.</li>
+            <li><strong>Planetary Accretion:</strong> Dust and gas clumped together to form planets, moons, and other bodies.</li>
+        </ol>
+        <hr>
+        <h3>Conclusion</h3>
+        <p>The solar system is a dynamic and diverse system that reflects the universe's complexity. By studying it, we uncover our cosmic origins and gain insight into the future of human exploration.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 OrbitHub. All rights reserved.</p>
+    </footer>
+
+    <script src="solar-system.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+/* General Body and Background Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #162042; /* Dark Blue */
+    color: #fff; /* White text */
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background Image and Overlay */
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    animation: fadeInBackground 2s ease-in-out;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    z-index: -1;
+}
+
+/* Hero Content */
+.hero-content {
+    text-align: center;
+    color: #ffffff;
+    animation: fadeInText 2s ease-in-out;
+    padding: 1rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: #a473b7;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px #22132c;
+    animation: slideDown 1.5s ease-out;
+}
+
+.hero-quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #494e8a;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* OrbitHub Anchor */
+.orbit-hub {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    color: #407fa4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    animation: fadeInOrbitHub 1s ease-in;
+}
+
+.orbit-hub:hover {
+    color: #a473b7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-quote {
+        font-size: 1.2rem;
+    }
+    .orbit-hub {
+        font-size: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInOrbitHub {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Description Section */
+:root {
+    --color-primary: #A473B7;
+    --color-secondary: #494E8A;
+    --color-bg: #0E2738;
+    --color-text: #FFFFFF;
+    --color-hr: #407FA4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: var(--color-primary);
+}
+
+ul, p {
+    line-height: 1.6;
+}
+
+.video-small {
+    width: 300px;
+    height: 250px;
+    margin: 10px 0;
+    border: 2px solid var(--color-secondary);
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in;
+}
+
+.animated-hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, var(--color-primary), var(--color-hr));
+    margin: 20px 0;
+    animation: slideIn 2s ease-in-out;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.responsive-table th, .responsive-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid var(--color-secondary);
+}
+
+.responsive-table th {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+}
+
+.responsive-table td {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #170512; /* Very Dark Red */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .section h3 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1.1rem;
+    }
+
+    video {
+        width: 80%; /* Adjust video size for smaller screens */
+    }
+}
